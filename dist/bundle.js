@@ -25672,7 +25672,7 @@ exports = module.exports = __webpack_require__(79)(undefined);
 
 
 // module
-exports.push([module.i, "body{\n  margin: 0;\n  padding: 0;\n}\n\n.Main{\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n", ""]);
+exports.push([module.i, "body{\n  margin: 0;\n  padding: 0;\n}\n\n.Main{\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n}\n\n.Main > div {\n  width: 50vw;\n  height: 100vh;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n}\n\n.React {\n  background-color: rgb(24, 142, 24);\n}\n\n.Node {\n  background-color: rgb(50, 165, 242);\n}\n", ""]);
 
 // exports
 
@@ -26243,6 +26243,14 @@ var _react = __webpack_require__(0);
 
 var _react2 = _interopRequireDefault(_react);
 
+var _react3 = __webpack_require__(83);
+
+var _react4 = _interopRequireDefault(_react3);
+
+var _node = __webpack_require__(84);
+
+var _node2 = _interopRequireDefault(_node);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -26261,15 +26269,20 @@ var Main = function (_Component) {
   }
 
   _createClass(Main, [{
-    key: "render",
+    key: 'render',
     value: function render() {
       return _react2.default.createElement(
-        "div",
-        { className: "Main" },
+        'div',
+        { className: 'Main' },
         _react2.default.createElement(
-          "h1",
-          null,
-          "Welcome to your React - Node Project!"
+          'div',
+          { className: 'React' },
+          _react2.default.createElement('img', { className: 'react-png', src: _react4.default, width: '275px', height: '200px' })
+        ),
+        _react2.default.createElement(
+          'div',
+          { className: 'Node' },
+          _react2.default.createElement('img', { className: 'node-png', src: _node2.default, width: '275px', height: '275px' })
         )
       );
     }
@@ -26279,6 +26292,18 @@ var Main = function (_Component) {
 }(_react.Component);
 
 exports.default = Main;
+
+/***/ }),
+/* 83 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "cc416dc38f772a80482ea11aa25ef1b4.png";
+
+/***/ }),
+/* 84 */
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "36700bee9a1831f2691165d291d62d78.png";
 
 /***/ })
 /******/ ]);

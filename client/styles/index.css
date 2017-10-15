@@ -5,7 +5,24 @@ body{
 
 .Main{
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.Main > div {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.React {
+  background-color: rgb(24, 142, 24);
+}
+
+.Node {
+  background-color: rgb(50, 165, 242);
 }
