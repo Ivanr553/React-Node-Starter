@@ -23,7 +23,7 @@ app.engine('html', function(path, options, callbacks) {
 })
 
 //Static files
-app.use(express.static(path.join(__dirname, '../client')))
+app.use(express.static(path.join(__dirname, '../dist')))
 
 //Routes
 app.use('/', indexRoute)
