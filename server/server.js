@@ -2,7 +2,6 @@
 const express = require('express')
 const fs = require('fs')
 const path = require('path')
-const mongoose = require('mongoose')
 const cors = require('cors')
 const bodyParser = require('body-parser')
 
@@ -15,8 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 //Imports
-const indexRoute = require('./routes/index')
-const db = require('../config/database')
+const indexRoute = require('./routes/router')
 
 //View Engine
 app.set('view engine', 'html')
