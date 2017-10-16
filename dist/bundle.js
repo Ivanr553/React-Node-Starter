@@ -25672,7 +25672,7 @@ exports = module.exports = __webpack_require__(79)(undefined);
 
 
 // module
-exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n}\n\n.Main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n\n.header {\n  height: 20vh;\n  width: 100vw;\n  background-color: rgb(50, 50, 50);\n  color: rgb(220, 220, 220);\n  font-size: 2.5em;\n}\n\n.container {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n}\n\n.container > div {\n  /*width: 50vw;*/\n  height: 80vh;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n}\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n}\n\n.Main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n\n.header {\n  height: 20vh;\n  width: 100vw;\n  background-color: rgb(50, 50, 50);\n  color: rgb(220, 220, 220);\n  font-size: 2.5em;\n}\n\n.container {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n}\n\n.container > div {\n  height: 80vh;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n}\n", ""]);
 
 // exports
 
@@ -26284,12 +26284,12 @@ var Main = function (_Component) {
           { className: 'container' },
           _react2.default.createElement(
             'div',
-            { className: 'React' },
+            null,
             _react2.default.createElement('img', { className: 'react-png', src: _react4.default, width: '275px', height: '200px' })
           ),
           _react2.default.createElement(
             'div',
-            { className: 'Node' },
+            null,
             _react2.default.createElement('img', { className: 'node-png', src: _node2.default, width: '275px', height: '275px' })
           )
         )
