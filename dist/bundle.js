@@ -25672,7 +25672,7 @@ exports = module.exports = __webpack_require__(79)(undefined);
 
 
 // module
-exports.push([module.i, "body{\n  margin: 0;\n  padding: 0;\n}\n\n.Main{\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n}\n\n.Main > div {\n  width: 50vw;\n  height: 100vh;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n}\n\n.React {\n  background-color: rgb(24, 142, 24);\n}\n\n.Node {\n  background-color: rgb(50, 165, 242);\n}\n", ""]);
+exports.push([module.i, "body {\n  margin: 0;\n  padding: 0;\n}\n\n.Main {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  justify-content: center;\n}\n\n.header {\n  height: 20vh;\n  width: 100vw;\n  background-color: rgb(50, 50, 50);\n  color: rgb(220, 220, 220);\n  font-size: 2.5em;\n}\n\n.container {\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n}\n\n.container > div {\n  /*width: 50vw;*/\n  height: 80vh;\n  display: flex;\n  flex-direction: row;\n  align-items: center;\n  justify-content: center;\n}\n", ""]);
 
 // exports
 
@@ -26276,13 +26276,22 @@ var Main = function (_Component) {
         { className: 'Main' },
         _react2.default.createElement(
           'div',
-          { className: 'React' },
-          _react2.default.createElement('img', { className: 'react-png', src: _react4.default, width: '275px', height: '200px' })
+          { className: 'header container' },
+          ' Welcome to your React - Node starter! '
         ),
         _react2.default.createElement(
           'div',
-          { className: 'Node' },
-          _react2.default.createElement('img', { className: 'node-png', src: _node2.default, width: '275px', height: '275px' })
+          { className: 'container' },
+          _react2.default.createElement(
+            'div',
+            { className: 'React' },
+            _react2.default.createElement('img', { className: 'react-png', src: _react4.default, width: '275px', height: '200px' })
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'Node' },
+            _react2.default.createElement('img', { className: 'node-png', src: _node2.default, width: '275px', height: '275px' })
+          )
         )
       );
     }
