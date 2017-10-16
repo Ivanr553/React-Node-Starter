@@ -26,7 +26,6 @@ body {
 }
 
 .container > div {
-  /*width: 50vw;*/
   height: 80vh;
   display: flex;
   flex-direction: row;
